@@ -29,3 +29,13 @@ There is one slight problem with this approach. Since the dependencies are usual
 
 ### Setter Method
 You can specify a public setter method in the client class to set the dependencies. In this case, you can change the implementation of the dependencies if needed. But make sure to double check the dependencies are actually set before you uses them.
+
+## Inheritance vs Dependency Injection
+
+The two might sound similar at the beginning, but they represents two different concepts. 
+
+Inheritance can be seen as a shared identity. They are related under the Liskov Substitution Principle. Whatever the parent class can do, the child class can also do, and they can perform similar action because of this inherited relation.
+
+Dependency Injection is a form of shared functionality. Two classes may need to perform similar actions, but they are not necessarily related, it is just a part of them needed the same feature.
+
+
